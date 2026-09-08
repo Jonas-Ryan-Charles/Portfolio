@@ -1,32 +1,46 @@
-# Oval Hotel Housekeeping Portfolio
+# Jonas Ryan Charles — Part-Time Work Portfolio
 
-This version is a **static website**. It has no `package.json`, no Node dependencies, and no npm install step. This avoids the Vercel error:
+A lightweight static portfolio tailored for part-time opportunities in Adelaide, including:
 
-`npm error Exit handler never called!`
+- Guest experience and customer service
+- Hospitality and event work
+- Retail operations
+- Food production
+- General operations and site-based work
 
-## Deploy on Vercel
+## Tech
 
-1. Delete the old React/Vite files from your GitHub repo, especially:
-   - `package.json`
-   - `package-lock.json`
-   - `node_modules` if it exists locally
-   - `src/`
-   - `vite.config.js`
-   - `tailwind.config.js`
-   - `postcss.config.js`
+This site is intentionally simple:
 
-2. Upload these files to the root of your GitHub repo:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `images/`
+- `index.html`
+- `styles.css`
+- `script.js`
+- `images/`
+- `vercel.json`
 
-3. In Vercel project settings:
-   - Framework Preset: **Other**
-   - Build Command: leave empty
-   - Output Directory: leave empty or `.`
-   - Install Command: leave empty
+There is no Node.js build step and no package installation required.
 
-## Replacing images
+## Deploy to Vercel
 
-Replace the files inside `/images` with your real logos and profile image. Keep the same filenames or update the paths in `index.html`.
+Use the repository root as the site root.
+
+Recommended Vercel settings:
+
+- Framework Preset: **Other**
+- Build Command: leave empty
+- Install Command: leave empty
+- Output Directory: `.` or leave empty
+
+## Images used
+
+The portfolio expects these existing files in `/images`:
+
+- `Profile_pic.png`
+- `adelaide-oval-logo.png`
+- `coles-logo.png`
+- `goodman-fielder-logo.png`
+- `mamalla-logo.png`
+
+## Customising content
+
+Most content changes can be made directly in `index.html`. Styling is in `styles.css`, and the scroll/reveal behaviour is in `script.js`.
